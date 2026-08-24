@@ -1,0 +1,202 @@
+﻿<link rel="stylesheet" href="~/css/ProfileDetail.css"/>
+<div class="main-container">
+    <div class="inner-container-1">
+        <div class="name-title">
+
+            <h1>@Model.Name</h1>
+            <p style="margin-top:10px;">@Model.Title</p>
+        </div>
+        <div class="tabs">
+            <button class="tab active">Template Information</button>
+            <button class="tab">Biography</button>
+            <button class="tab">Education</button>
+            <button class="tab">Experience</button>
+            <button class="tab">Projects</button>
+        </div>
+
+
+
+       
+
+        <section class="tab-section" id="profile">
+            
+            <p>
+                I am a recent Information Technology graduate with a strong interest
+                in web development. I am passionate about building responsive,
+                user-friendly websites and web applications. I am currently
+                improving my skills in modern web technologies and looking for an
+                opportunity where I can apply my knowledge, gain practical experience,
+                and grow as a web developer.
+            </p>
+        </section>
+
+        <section class="tab-section" id="biography">
+            
+            <p>
+                I recently completed my degree in Information Technology and have
+                developed a strong interest in software and web development. During
+                my studies, I gained experience with programming, databases, web
+                technologies, and problem-solving.
+            </p>
+            <p>
+                I enjoy learning new technologies and working on projects that help
+                me improve my practical skills. I am currently seeking a web
+                development internship or entry-level position where I can work
+                with an experienced team, contribute to real-world projects, and
+                continue developing my professional skills.
+            </p>
+        </section>
+
+        <section class="tab-section" id="education">
+            
+            <p>
+                <strong>Bachelor's Degree in Information Technology</strong>
+            </p>
+            <p>
+                I recently graduated with a degree in Information Technology, where
+                I studied programming, web development, databases, software
+                engineering, computer networks, and other areas of IT.
+            </p>
+            <p>
+                My education has given me a foundation in both technical concepts
+                and problem-solving, and I am now looking forward to applying these
+                skills in a professional web development environment.
+            </p>
+        </section>
+
+
+        <section class="tab-section" id="experience">
+            
+                <p>this is experience</p>
+            
+
+        </section>
+
+
+        <section class="tab-section" id="project">
+            <div class="projects-main-container">
+                <div class="project-inner-div">
+                    <h1>Home Repair Hub</h1>
+                    <div class="tool-tech">
+                        <h4 style="color:black;">Tools & Technologies :</h4>
+                        <p>Php, Laravel, MVC</p>
+                    </div>
+                    <div class="project-overview">
+                        <h4 style="color:black;">Project Overview :</h4>
+                        <p>
+                            Home Repair Hub is a web-based platform designed to connect
+                            customers with professional home repair and maintenance service
+                            providers. The system allows users to explore available services,
+                            submit service requests, and manage their repair needs through
+                            an easy-to-use interface.
+                        </p>
+                    </div>
+                </div>
+                <div class="project-inner-div">
+                    <h1>Home Repair Hub</h1>
+                    <div class="tool-tech">
+                        <h4 style="color:black;">Tools & Technologies :</h4>
+                        <p>Php, Laravel, MVC</p>
+                    </div>
+                    <div class="project-overview">
+                        <h4 style="color:black;">Project Overview :</h4>
+                        <p>
+                            Home Repair Hub is a web-based platform designed to connect
+                            customers with professional home repair and maintenance service
+                            providers. The system allows users to explore available services,
+                            submit service requests, and manage their repair needs through
+                            an easy-to-use interface.
+                        </p>
+                    </div>
+                </div>
+                <div class="project-inner-div">
+                    <h1>Home Repair Hub</h1>
+                    <div class="tool-tech">
+                        <h4 style="color:black;">Tools & Technologies :</h4>
+                        <p>Php, Laravel, MVC</p>
+                    </div>
+                    <div class="project-overview">
+                        <h4 style="color:black;">Project Overview :</h4>
+                        <p>
+                            Home Repair Hub is a web-based platform designed to connect
+                            customers with professional home repair and maintenance service
+                            providers. The system allows users to explore available services,
+                            submit service requests, and manage their repair needs through
+                            an easy-to-use interface.
+                        </p>
+                    </div>
+                </div>
+                <div class="project-inner-div">
+                    <h1>Home Repair Hub</h1>
+                    <div class="tool-tech">
+                        <h4 style="color:black;">Tools & Technologies :</h4>
+                        <p>Php, Laravel, MVC</p>
+                    </div>
+                    <div class="project-overview">
+                        <h4 style="color:black;">Project Overview :</h4>
+                        <p>
+                            Home Repair Hub is a web-based platform designed to connect
+                            customers with professional home repair and maintenance service
+                            providers. The system allows users to explore available services,
+                            submit service requests, and manage their repair needs through
+                            an easy-to-use interface.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+    </div>
+    <div class="inner-container-2">
+        <div class="image-section">
+            <img class="profileimg" src="@Model.ProfilePhoto" alt="@Model.Name" />
+        </div>
+        <div class="user-detail">
+            <div class="user-information">
+                <img src="~/icons/gmail.png" alt="gmail" />
+                <a href="www.google.com">@Model.Gmail</a>
+            </div>
+            <div class="user-information">
+                <img src="~/icons/phone.png" alt="gmail" />
+                <a href="www.google.com">@Model.PhoneNumber</a>
+            </div>
+            <div class="user-information">
+                <img src="~/icons/address.png" alt="gmail" />
+                <p>@Model.Address</p>
+            </div>
+            <div class="user-information">
+                <img src="~/icons/linkedin.png" alt="gmail" />
+                <a href="www.google.com">@Model.LinkedInUrl</a>
+            </div>
+            <div class="user-information">
+                <img src="~/icons/gmail.png" alt="gmail" />
+                <a href="www.google.com">@Model.WebsiteURL</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    const tabs = document.querySelectorAll(".tab");
+    const sections = document.querySelectorAll(".tab-section");
+
+    tabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => {
+
+            tabs.forEach(t => t.classList.remove("active"));
+
+            sections.forEach(s => {
+                s.style.display = "none";
+            });
+
+            tab.classList.add("active");
+
+            sections[index].style.display = "block";
+        });
+    });
+</script>
